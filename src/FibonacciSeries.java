@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class FibonacciSeries {
 
     /**
@@ -17,8 +19,9 @@ public class FibonacciSeries {
     }
 
     public static void main(String[] args) {
-        int n = 6; // Example index
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int n = scanner.nextInt();
         // Generate the nth Fibonacci number
         int fib = fibonacci(n);
         System.out.println("The " + n + "th Fibonacci number is: " + fib);

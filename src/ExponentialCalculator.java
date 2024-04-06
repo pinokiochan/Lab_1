@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ExponentialCalculator {
 
     /**
@@ -20,9 +22,11 @@ public class ExponentialCalculator {
     }
 
     public static void main(String[] args) {
-        double a = 2;
-        int n = 10;
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        double a = scanner.nextDouble();
+        System.out.print("Enter the power of number: ");
+        int n = scanner.nextInt();
         // Calculate a^n
         double result = power(a, n);
         System.out.println(a + " raised to the power of " + n + " is: " + result);

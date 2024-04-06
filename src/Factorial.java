@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Factorial {
 
     /**
@@ -17,8 +19,9 @@ public class Factorial {
     }
 
     public static void main(String[] args) {
-        int num = 5; // Example number
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int num = scanner.nextInt();
         // Calculate the factorial of the number
         int fact = factorial(num);
         System.out.println("Factorial of " + num + " is: " + fact);

@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MinimumElementFinder {
 
     /**
@@ -21,8 +23,13 @@ public class MinimumElementFinder {
     }
 
     public static void main(String[] args) {
-        int[] arr = {9, 3, 5, 2, 8}; // Example array
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter size of array: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        for(int i = 0; i < n; i++){
+            arr[i] = scanner.nextInt();
+        }
         // Find the minimum element in the array
         int min = findMinimum(arr);
         System.out.println("Minimum element in the array: " + min);

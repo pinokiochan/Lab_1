@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class WhereIsMyPrime {
 
     /**
@@ -24,18 +26,15 @@ public class WhereIsMyPrime {
     }
 
     public static void main(String[] args) {
-        int num1 = 7;
-        if (isPrime(num1)) {
-            System.out.println(num1 + " is prime");
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        if (isPrime(num)) {
+            System.out.println(num + " is prime");
         } else {
-            System.out.println(num1 + " is not prime");
+            System.out.println(num + " is not prime");
         }
 
-        int num2 = 10;
-        if (isPrime(num2)) {
-            System.out.println(num2 + " is prime");
-        } else {
-            System.out.println(num2 + " is not prime");
-        }
+
+
     }
 }

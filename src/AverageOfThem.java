@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class AverageOfThem {
 
     /**
@@ -23,8 +25,13 @@ public class AverageOfThem {
     }
 
     public static void main(String[] args) {
-        int[] arr = {9, 3, 5, 2, 8}; // Example array
-
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter size of array: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++){
+            arr[i] = scanner.nextInt();
+        }
         // Calculate the average of elements in the array
         double average = calculateAverage(arr);
         System.out.println("Average of elements in the array: " + average);
