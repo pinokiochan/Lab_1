@@ -25,7 +25,7 @@ public class WhereIsMyPrime {
         return true; // If n is not divisible by any number in the range, it's prime
     }
 
-    public static void main(String[] args) {
+    public static void run() {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
         if (isPrime(num)) {

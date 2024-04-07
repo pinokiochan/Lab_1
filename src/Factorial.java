@@ -18,7 +18,7 @@ public class Factorial {
         }
     }
 
-    public static void main(String[] args) {
+    public static void run() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number: ");
         int num = scanner.nextInt();

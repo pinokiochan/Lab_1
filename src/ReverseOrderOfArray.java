@@ -5,9 +5,9 @@ public class ReverseOrderOfArray {
     /**
      * This method prompts the user to enter the size of the array
      * and then calls the Reverse_Of_Sequence method to reverse the order of elements.
-     * @param args The command-line arguments (not used).
+     *  The command-line arguments (not used).
      */
-    public static void main(String[] args) {
+    public static void run() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter size of array: ");
         int n = scanner.nextInt();

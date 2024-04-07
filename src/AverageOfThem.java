@@ -24,7 +24,7 @@ public class AverageOfThem {
         return average;
     }
 
-    public static void main(String[] args) {
+    public static void run() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter size of array: ");
         int n = scanner.nextInt();

@@ -18,7 +18,7 @@ public class BinomialCoefficient {
         }
     }
 
-    public static void main(String[] args) {
+    public static void run() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the numbers to find Binomial Coefficient (n k): ");
         int n = scanner.nextInt();
