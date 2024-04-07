@@ -27,8 +27,11 @@ public class ExponentialCalculator {
         double a = scanner.nextDouble();
         System.out.print("Enter the power of number: ");
         int n = scanner.nextInt();
+        long startTime = System.nanoTime();
         // Calculate a^n
         double result = power(a, n);
         System.out.println(a + " raised to the power of " + n + " is: " + result);
+        double runtime = (double)(System.nanoTime() - startTime)/1000000000;
+        System.out.println("runtime: "+runtime + "\ntime complexity: O(n/2)");
     }
 }

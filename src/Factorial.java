@@ -22,8 +22,11 @@ public class Factorial {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number: ");
         int num = scanner.nextInt();
+        long startTime = System.nanoTime();
         // Calculate the factorial of the number
         int fact = factorial(num);
         System.out.println("Factorial of " + num + " is: " + fact);
+        double runtime = (double)(System.nanoTime() - startTime)/1000000000;
+        System.out.println("runtime: "+runtime + "\ntime complexity: O(n/2)");
     }
 }

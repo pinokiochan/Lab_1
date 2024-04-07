@@ -28,11 +28,14 @@ public class WhereIsMyPrime {
     public static void run() {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
+        long startTime = System.nanoTime();
         if (isPrime(num)) {
             System.out.println(num + " is prime");
         } else {
             System.out.println(num + " is not prime");
         }
+        double runtime = (double)(System.nanoTime() - startTime)/1000000000;
+        System.out.println("runtime: "+runtime + "\ntime complexity: O(n/2)");
 
 
 

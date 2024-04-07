@@ -21,7 +21,10 @@ public class GCD {
         System.out.print("Enter the numbers to find their GCD: ");
         int n = scanner.nextInt();
         int k = scanner.nextInt();
+        long startTime = System.nanoTime();
         int result = gcd(n, k);
+        double runtime = (double)(System.nanoTime() - startTime)/1000000000;
+        System.out.println("runtime: "+runtime + "\ntime complexity: O(n/2)");
         System.out.println("GCD: " + result);
         scanner.close();
     }

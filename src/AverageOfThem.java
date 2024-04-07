@@ -32,8 +32,11 @@ public class AverageOfThem {
         for (int i = 0; i < n; i++){
             arr[i] = scanner.nextInt();
         }
+        long startTime = System.nanoTime();
         // Calculate the average of elements in the array
         double average = calculateAverage(arr);
         System.out.println("Average of elements in the array: " + average);
+        double runtime = (double)(System.nanoTime() - startTime)/1000000000;
+        System.out.println("runtime: "+runtime + "\ntime complexity: O(n/2)");
     }
 }

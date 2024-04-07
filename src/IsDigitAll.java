@@ -27,13 +27,15 @@ public class IsDigitAll {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the string: ");
         String input = scanner.nextLine();
-
+        long startTime = System.nanoTime();
         // Check if the input string consists only of digits
         if (isAllDigit(input)) {
             System.out.println(input + " : Yes");
         } else {
             System.out.println(input + " : No");
         }
+        double runtime = (double)(System.nanoTime() - startTime)/1000000000;
+        System.out.println("runtime: "+runtime + "\ntime complexity: O(n/2)");
 
         scanner.close();
     }

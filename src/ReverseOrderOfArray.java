@@ -12,7 +12,10 @@ public class ReverseOrderOfArray {
         System.out.print("Enter size of array: ");
         int n = scanner.nextInt();
         System.out.println("Enter the elements of the array:");
+        long startTime = System.nanoTime();
         Reverse_Of_Sequence(n, scanner);
+        double runtime = (double)(System.nanoTime() - startTime)/1000000000;
+        System.out.println("runtime: "+runtime + "\ntime complexity: O(n/2)");
         scanner.close();
     }
 

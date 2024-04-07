@@ -23,8 +23,11 @@ public class BinomialCoefficient {
         System.out.print("Enter the numbers to find Binomial Coefficient (n k): ");
         int n = scanner.nextInt();
         int k = scanner.nextInt();
+        long startTime = System.nanoTime();
         int result = binomialCoeff(n, k);
         System.out.println("C(" + n + ", " + k + ") = " + result);
+        double runtime = (double)(System.nanoTime() - startTime)/1000000000;
+        System.out.println("runtime: "+runtime + "\ntime complexity: O(n/2)");
         scanner.close();
     }
 }

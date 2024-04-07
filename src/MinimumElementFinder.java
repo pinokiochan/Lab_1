@@ -31,7 +31,10 @@ public class MinimumElementFinder {
             arr[i] = scanner.nextInt();
         }
         // Find the minimum element in the array
+        long startTime = System.nanoTime();
         int min = findMinimum(arr);
         System.out.println("Minimum element in the array: " + min);
+        double runtime = (double)(System.nanoTime() - startTime)/1000000000;
+        System.out.println("runtime: "+runtime + "\ntime complexity: O(n/2)");
     }
 }

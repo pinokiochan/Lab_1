@@ -22,8 +22,11 @@ public class FibonacciSeries {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number: ");
         int n = scanner.nextInt();
+        long startTime = System.nanoTime();
         // Generate the nth Fibonacci number
         int fib = fibonacci(n);
         System.out.println("The " + n + "th Fibonacci number is: " + fib);
+        double runtime = (double)(System.nanoTime() - startTime)/1000000000;
+        System.out.println("runtime: "+runtime + "\ntime complexity: O(n/2)");
     }
 }
