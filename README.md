@@ -1,3 +1,9 @@
+# Main
+1. Run this file to start the program
+2. Select the needed function from the list
+3. Enter required arguments
+4. Get result
+
 # Minimum Element Finder
 
 This program finds the minimum element in an array.

@@ -6,6 +6,9 @@ public class ReverseOrderOfArray {
      * This method prompts the user to enter the size of the array
      * and then calls the Reverse_Of_Sequence method to reverse the order of elements.
      *  The command-line arguments (not used).
+     * time complexity: O(n/2), where n is the given number
+     * the method iterates through numbers from n/2 to 1,
+     * resulting in linear time complexity
      */
     public static void run() {
         Scanner scanner = new Scanner(System.in);

@@ -5,6 +5,9 @@ public class IsDigitAll {
     /**
      * This method checks if a given string consists only of digits using recursion.
      * @param input The string to be checked.
+     * time complexity: O(n/2), where n is the given number
+     * the method iterates through numbers from n/2 to 1,
+     * resulting in linear time complexity
      * @return True if the string consists only of digits, otherwise false.
      */
     public static boolean isAllDigit(String input) {

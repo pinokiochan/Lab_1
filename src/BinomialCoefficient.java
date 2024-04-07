@@ -4,6 +4,9 @@ public class BinomialCoefficient {
 
     /**
      * This method calculates the binomial coefficient C(n, k) using recursion.
+     * time complexity: O(n/2), where n is the given number
+     * the method iterates through numbers from n/2 to 1,
+     * resulting in linear time complexity
      * @param n The total number of items.
      * @param k The number of items to choose.
      * @return The binomial coefficient C(n, k).

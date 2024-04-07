@@ -5,6 +5,9 @@ public class GCD {
     /**
      * This method calculates the greatest common divisor (GCD) of two numbers using recursion.
      * @param a The first number.
+     * time complexity: O(n/2), where n is the given number
+     * the method iterates through numbers from n/2 to 1,
+     * resulting in linear time complexity
      * @param b The second number.
      * @return The GCD of the two numbers.
      */
